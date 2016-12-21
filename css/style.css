@@ -548,6 +548,9 @@ h4, .h4 {
 #our-process h4 span {
     margin: 0 5px;
 }
+#our-process h4 span strong {
+    color: #48d5b5 !important;
+}
 
 
 
