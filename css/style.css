@@ -5,10 +5,12 @@
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url("../fonts/bebas-neue.otf") format("opentype"),
+    src: url('../fonts/bebas-neue.eot');
+    src: url('../fonts/bebas-neue.eot?#iefix') format('embedded-opentype'),
+         url("../fonts/bebas-neue.otf") format("opentype"),
+         url('../fonts/bebas-neue.woff2') format('woff2'),
+         url('../fonts/bebas-neue.woff') format('woff'),
          url('../fonts/bebas-neue.ttf') format('truetype'),
-    font-weight: 200;
-    font-style: normal;
 }
 
 
