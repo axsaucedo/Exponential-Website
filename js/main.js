@@ -447,7 +447,7 @@ function initParticles() {
             nb: 175,
             line_linked: {
                 enable_auto: true,
-                distance: 550,
+                distance: 350,
                 color: '#fff',
                 opacity: 0.5,
                 width: 1,

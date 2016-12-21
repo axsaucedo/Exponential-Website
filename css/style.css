@@ -434,7 +434,7 @@ h4, .h4 {
     left: 0;
     width: 100%;
     height: auto;
-    top: 50%;
+    top: 45%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -631,7 +631,6 @@ h4, .h4 {
 }
 
 
-
 /*==============================
 =            LATEST            =
 ==============================*/
@@ -762,8 +761,8 @@ h4, .h4 {
 }
 #contact {
     background: #7D41FF;
-    background-image: -webkit-linear-gradient(35deg, #000, #354F7E);
-    background-image: linear-gradient(35deg, #000, #354F7E);
+    background-image: -webkit-linear-gradient(35deg, #0D1421, #354F7E);
+    background-image: linear-gradient(35deg, #0D1421, #354F7E);
     padding: 350px 0 500px;
 }
 #contact:before {
