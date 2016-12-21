@@ -10,7 +10,7 @@
          url("../fonts/bebas-neue.otf") format("opentype"),
          url('../fonts/bebas-neue.woff2') format('woff2'),
          url('../fonts/bebas-neue.woff') format('woff'),
-         url('../fonts/bebas-neue.ttf') format('truetype'),
+         url('../fonts/bebas-neue.ttf') format('truetype');
 }
 
 
