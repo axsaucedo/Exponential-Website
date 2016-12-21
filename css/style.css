@@ -121,7 +121,7 @@ h4, .h4 {
     -moz-transition: all 700ms ease;
     transition: all 700ms ease;
 }
-#header:before { background-image: url('../img/background.jpg'); background-size: cover; background-repeat: no-repeat; }
+#header:before { background-image: url('../img/background-lowres.jpg'); background-size: cover; background-repeat: no-repeat; }
 #header:after { background-image: url('../img/background-shading.png'); background-position: bottom; background-size: contain; background-repeat: repeat-x; }
 .show-background #header:before { opacity: 0.3; }
 .show-background #header:after { opacity: 1; }
