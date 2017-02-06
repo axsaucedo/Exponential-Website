@@ -269,7 +269,7 @@ $(window).load(function() {
             $inputs.prop("disabled", true);
 
             request = $.ajax({
-                        url: "https://script.google.com/macros/s/AKfycbxRZRZNs_FPJ6lRQ1bsn_esojIIFM5zU3YbKb4AGC-jcf9JRuc/exec",
+                        url: "https://script.google.com/macros/s/AKfycbzpyvQVF58JwyJbAaW6vbZ4cvV5r_CB1WzL96OshDv4XNAo9T0/exec",
                         type: "post",
                         data: serializedData
                     });
