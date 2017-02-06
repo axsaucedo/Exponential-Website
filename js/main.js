@@ -229,7 +229,7 @@ $(window).load(function() {
     });
 
 
-    $('form').submit(function() {
+    $('#contact-form').submit(function(event) {
         var form = $(this);
         form.find('.input').parent('.input-wrap').removeClass('has-error');
 
@@ -253,23 +253,51 @@ $(window).load(function() {
 
         var formData = {};
         formData.email = $('input.email').val();
-        formData.name = $('input.name').val();
+        formData.fname = $('input.first-name').val();
+        formData.lname = $('input.last-name').val();
         formData.inquiry = $('select.inquiry').val();
         formData.message = $('textarea.message').val();
         formData.subscribe = $('input.subscribe').prop('checked');
         formData = $.param(formData);
 
         if (!hasError) {
-            $.getJSON(window.location.protocol + '//' + window.location.hostname + '/meowmeowmeow.php?'+formData, function(data) {
-                // if (data.status == 'sent') {
+
+            var $inputs = form.find("input, select, button, textarea");
+
+            var serializedData = form.serialize();
+
+            $inputs.prop("disabled", true);
+
+            request = $.ajax({
+                        url: "https://script.google.com/macros/s/AKfycbxRZRZNs_FPJ6lRQ1bsn_esojIIFM5zU3YbKb4AGC-jcf9JRuc/exec",
+                        type: "post",
+                        data: serializedData
+                    });
+
+                    request.done(function (response, textStatus, jqXHR){
+                
                     $('.form-overlay').click();
                     $('input[type=text], textarea').val('');
                     $('#contact h2 span.lets').text('Thank');
                     $('#contact h2 span.chat').text('You!');
                     $('#contact').addClass('success');
-                // }
             });
-       }
+
+            request.fail(function (jqXHR, textStatus, errorThrown){
+                // Log the error to the console
+                console.error(
+                    "The following error occurred: "+
+                    textStatus, errorThrown
+                );
+            });
+
+            request.always(function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+            });
+        }
+
+        // event.preventDefault();
 
         return false;
     });
