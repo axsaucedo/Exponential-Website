@@ -426,7 +426,7 @@ h4, .h4 {
 }
 #our-process .contents {
     position: relative;
-    height: 800px;
+    height: 200px;
     z-index: 777777777;
 }
 #our-process .contents .wrap {
@@ -434,7 +434,7 @@ h4, .h4 {
     left: 0;
     width: 100%;
     height: auto;
-    top: 45%;
+    top: 15%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
