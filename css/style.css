@@ -40,16 +40,19 @@ section, header, footer, main, article, nav, aside {
     position: relative;
 }
 a {
-    color: #ff455f;
-    outline: none !important;
-    text-decoration: none !important;
+    font-weight: 400;
+    color: #48d5b5;
     -webkit-transition: all 225ms ease;
     -moz-transition: all 225ms ease;
     transition: all 225ms ease;
 }
-a:hover, a:focus {
-    color: #0e1832;
+
+a:hover {
+    font-weight: 400;
+    color: #53FFD8;
+    text-decoration: none;
 }
+
 p {
     color: #48d5b5;
     font-size: 20px;
