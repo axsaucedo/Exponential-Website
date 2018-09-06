@@ -271,7 +271,8 @@ $(window).load(function() {
             request = $.ajax({
                         url: "https://script.google.com/macros/s/AKfycbzpyvQVF58JwyJbAaW6vbZ4cvV5r_CB1WzL96OshDv4XNAo9T0/exec",
                         type: "post",
-                        data: serializedData
+                        data: serializedData,
+                        contentType: "application/x-www-form-urlencoded"
                     });
 
                     request.done(function (response, textStatus, jqXHR){
